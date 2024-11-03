@@ -16,17 +16,17 @@ public class HotelController {
     @Autowired
     private HotelService hotelService;
 
-    @PostMapping("/create")
+    @PostMapping()
     public ResponseEntity<Hotel> createHotel(@RequestBody Hotel hotel){
         return ResponseEntity.status(HttpStatus.CREATED).body(hotelService.createHotel(hotel));
     }
 
-    @GetMapping("/get/{hotelId}")
+    @GetMapping("/{hotelId}")
     public ResponseEntity<Hotel> getHotel(@PathVariable String hotelId){
         return ResponseEntity.ok(hotelService.getHotel(hotelId));
     }
 
-    @GetMapping("/getAll")
+    @GetMapping()
     public ResponseEntity<List<Hotel>> getAll(){
         return ResponseEntity.ok(hotelService.getAll());
     }

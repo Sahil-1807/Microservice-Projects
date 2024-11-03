@@ -15,17 +15,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/create")
+    @PostMapping()
     public ResponseEntity<User> createUser(@RequestBody User user){
         User user1 = userService.saveUser(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(user1);
     }
-    @GetMapping("/getuser/{userId}")
+    @GetMapping("/{userId}")
     public ResponseEntity<User> getSingleUser(@PathVariable String userId){
          User user = userService.getUser(userId);
          return ResponseEntity.ok(user);
     }
-    @GetMapping("/getall")
+    @GetMapping()
     public ResponseEntity<List<User>> getAllUser(){
         List<User> list = userService.getAllUsers();
         return ResponseEntity.ok(list);
