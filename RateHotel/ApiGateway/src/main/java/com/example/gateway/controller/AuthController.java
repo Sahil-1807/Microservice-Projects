@@ -26,7 +26,7 @@ public class AuthController {
 
     private Logger LOGGER = LoggerFactory.getLogger(AuthController.class);
 
-    @GetMapping
+    @GetMapping("/login")
     public ResponseEntity<AuthResponse> login(
             @RegisteredOAuth2AuthorizedClient("okta") OAuth2AuthorizedClient client,
             @AuthenticationPrincipal OidcUser user,

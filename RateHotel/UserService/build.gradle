@@ -32,7 +32,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework:spring-aop:6.1.14'
 	implementation 'io.github.resilience4j:resilience4j-spring-boot3:2.2.0'
- 
+
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'com.okta.spring:okta-spring-boot-starter:3.0.7'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
