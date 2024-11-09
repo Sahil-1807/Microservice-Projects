@@ -44,6 +44,7 @@ public class UserController {
 
     public ResponseEntity<User> ratingHotelFallback(String userId, Exception exception){
         LOGGER.info("Fallback is executed because service is down.", exception.getMessage());
+        exception.printStackTrace();
         User user = User.builder()
                 .userId("1234")
                 .name("temporary")
