@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BaseDomains.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BaseDomains.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EmailService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EmailService.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/EventDrivenKafkaOrderService.iml" filepath="$PROJECT_DIR$/.idea/EventDrivenKafkaOrderService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrderService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OrderService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StockService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/StockService.main.iml" />
     </modules>
   </component>
 </project>

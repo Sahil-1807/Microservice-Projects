@@ -1,7 +1,5 @@
 package com.example.orderservice.controller;
 
-import com.example.basedomains.dto.Order;
-import com.example.basedomains.dto.OrderEvent;
 import com.example.orderservice.kafka.OrderProducer;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
