@@ -1,4 +1,4 @@
-package com.example.stockservice.dto;
+package com.example.basedomains.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
