@@ -1,0 +1,16 @@
+show dbs
+q
+show dbs
+db.collections()
+db.collections
+db.list
+db.list()
+use admin
+db.getUsers()
+getUsers()
+db
+list
+list db
+db.getUsers()
+use admin
+mongo -u root -p root --authenticationDatabase admin
