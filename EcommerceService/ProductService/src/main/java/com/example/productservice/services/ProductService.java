@@ -6,6 +6,7 @@ import com.example.productservice.models.Product;
 import com.example.productservice.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Slf4j
 public class ProductService {
+    @Autowired
     private final ProductRepository productRepository;
 
     public ProductResponse createProduct(ProductRequest productRequest){
