@@ -1,1 +1,1 @@
-CREATE DATABASE IF NOT EXIST inventoryservice;
+CREATE DATABASE IF NOT EXISTS inventoryservice;
