@@ -23,8 +23,4 @@ public class SecurityConfig {
                 .build();
     }
 
-    @Bean
-    public JwtDecoder jwtDecoder() {
-        return NimbusJwtDecoder.withJwkSetUri(issuerUri + "/.well-known/jwks.json").build();
-    }
 }
