@@ -26,6 +26,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.3'
 	testImplementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:2.8.3'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j'
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
